@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  background-image: url("images/Fondos/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Fuentes */
+@font-face {
+    font-family: 'Stencilia-Bold';
+    src: url('fonts/Stencilia-Bold.ttf') format('TrueType'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Stencilia-A';
+  src: url('fonts/Stencilia-A.ttf') format('TrueType'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+/* Layout */
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto;
+  }
+/* Navegacion*/
+  header {
+    font-family: "Stencilia-A";
+  }
+  .bd-header {
+    margin: 2% 3% 3% 16%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+  }
+
+  .btn {
+    margin: 0 1% 0 0 ;
+  }
+/* Margen Izquierdo*/
+  .bd-aside {
+    height: 100vh;
+    background-image: url("images/Siluetas/siluetas1.png");
+    background-color: #EDA738;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .btn-group {
+    position: absolute;
+    bottom: 0;
+
+  }
+/*Centro*/
+  .container {
+    height: 100vh;
+    padding-top: 4rem;
+    background-color: rgba(255, 255, 255, 0);
+
+  }
+
+  #content {
+    margin: 2% 3% 0 16%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 75%;
+  }
+/* Margen derecho*/
+  #right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 1vw;
+    background-image: url("images/Fondos/banner.png");
+    background-size: fixed;
+    background-repeat: no-repeat;
+  }
+
+  
+}
